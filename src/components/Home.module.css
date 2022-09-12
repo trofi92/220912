@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.title {
+  position: absolute;
+  min-width: 100px;
+  top: 0;
+  left: 50%;
+  z-index: 30;
+}
+
+.subtitle {
+  position: absolute;
+  left: 50%;
+  top: 8vh;
+  min-width: 100px;
+  z-index: 30;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: animate 18s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.box span {
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 200deg)) translatez(400px);
+  -webkit-box-reflect: below 5px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.span1 {
+  --i: 1;
+}
+
+.span2 {
+  --i: 2;
+}
+
+.span3 {
+  --i: 3;
+}
+
+.span4 {
+  --i: 4;
+}
+
+.span5 {
+  --i: 5;
+}
+
+.span6 {
+  --i: 6;
+}
+
+.span7 {
+  --i: 7;
+}
+
+.span8 {
+  --i: 8;
+}
+
+.span9 {
+  --i: 9;
+}
+
+.span10 {
+  --i: 10;
+}
+
+.span11 {
+  --i: 11;
+}
+
+.span12 {
+  --i: 12;
+}
+
+.span13 {
+  --i: 13;
+}
+
+.span14 {
+  --i: 14;
+}
