@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+this is prototype of new cafe-app-project
+inspired by "생활코딩"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+// SPA, dark mode, login modal pop-up, route each page, no redirection
+// using Reactjs, styled components, Firebase
 
-## Available Scripts
+// Home.js : main page(main image, comment, sidebar menu)
+// if you logged in, this page will show you "Post-detail.js"
 
-In the project directory, you can run:
+// Modal.js : if user already joined, the user will click "I'm already joined" link,
+//then pop-up modal login page
 
-### `npm start`
+// Join.js : when click something before login, directly move to join page(auth with email address, pw)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+// Post.js : posting page include cafe name, location(in progress, fetching NAVER API), some review, username
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+// Post-details.js : user can check another user's post(review, recommendation) and also hit the like button
+// each user can hit the like button 1 time, and if user hit the button next time, it'll be canceled.
+// post can be modified or deleted by writer and admin-user(in progress)
 
-### `npm test`
+// Favorite.js : user can check their own liked posts in a list(in progress)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// SideBar.js : sidebar menu, fixed left of screen, dropdown feature,
+// dark mode, home, posts, favorite, contact, logout(activate when user logged in)
 
-### `npm run build`
+// Layout.js : wrapped up components, sidebar included
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// Router.js : control page routing, checking user login
