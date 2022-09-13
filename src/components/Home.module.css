@@ -10,13 +10,23 @@ body {
   position: absolute;
   min-width: 100px;
   top: 0;
+  text-align: center;
+  justify-content: center;
   left: 50%;
+  right: 50%;
   z-index: 30;
+}
+.title a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .subtitle {
+  text-align: center;
   position: absolute;
   left: 50%;
+  right: 50%;
+  justify-content: center;
   top: 8vh;
   min-width: 100px;
   z-index: 30;

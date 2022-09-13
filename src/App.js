@@ -5,7 +5,7 @@ import { DarkMode } from "./components/styled/DarkMode";
 export default function App() {
   return (
     <>
-      <Home />
+      <Home name="Home" />
       <DarkMode />
     </>
   );
