@@ -18,12 +18,12 @@ export const Sidebar = ({ width = 280, children }) => {
   };
 
   //close sidebar when user click ouside of it
-  const handleClose = async (e) => {
+  const handleClose = (e) => {
     let sideArea = side.current;
     let sideChildren = side.current.contains(e.target);
     if (isOpen && (!sideArea || !sideChildren)) {
-      await setXPosition(width);
-      await setIsOpen(false);
+      setXPosition(width);
+      setIsOpen(false);
     }
   };
 
@@ -52,7 +52,7 @@ export const Sidebar = ({ width = 280, children }) => {
           {isOpen ? (
             <span>X</span>
           ) : (
-            <span className={styles.openBtn}>></span>
+            <span className={styles.openBtn}>&gt;</span>
           )}
         </button>
 

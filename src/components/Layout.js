@@ -1,5 +1,5 @@
 import { Sidebar } from "./Sidebar";
-import styles from "./layout.module.css";
+import styles from "./Layout.module.css";
 
 export const Layout = () => {
   return (
