@@ -10,7 +10,6 @@ export const DarkMode = () => {
     const black = styles.getPropertyValue("--black");
     const white = styles.getPropertyValue("--white");
     const docEl = document.documentElement;
-
     if (isDarkEnabled) {
       docEl.style.setProperty("--background", black);
       docEl.style.setProperty("--foreground", white);

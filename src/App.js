@@ -1,12 +1,23 @@
 import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "./components/Home";
-import { DarkMode } from "./components/styled/DarkMode";
-// import { Sidebar } from "./components/Sidebar";
+import { Post } from "./components/Post";
+// import {
+//   TransitionGroup,
+//   CSSTransition,
+// } from "react-transition-group";
+import { Layout } from "./components/Layout";
 export default function App() {
+  // const location = useLocation();
   return (
     <>
-      <Home name="Home" />
-      <DarkMode />
+      <Layout />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/post" element={<Post />} />
+      </Routes>
     </>
   );
 }
+//https://devnm.tistory.com/m/10

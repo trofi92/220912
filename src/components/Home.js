@@ -1,13 +1,9 @@
 import styles from "./Home.module.css";
-import { Layout } from "./Layout";
 
-export const Home = (props) => {
+export const Home = () => {
   return (
     <>
-      <Layout />
-      <h1 className={styles.title}>
-        <a href="/">{props.name}</a>
-      </h1>
+      <h1 className={styles.title}>Home</h1>
 
       <p className={styles.subtitle}>bitter, sweet</p>
 

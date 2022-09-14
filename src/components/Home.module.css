@@ -16,10 +16,6 @@ body {
   right: 50%;
   z-index: 30;
 }
-.title a {
-  text-decoration: none;
-  color: inherit;
-}
 
 .subtitle {
   text-align: center;

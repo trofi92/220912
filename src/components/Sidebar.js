@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Sidebar.module.css";
+import { DarkMode } from "./styled/DarkMode";
 
 export const Sidebar = ({ width = 280, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +58,7 @@ export const Sidebar = ({ width = 280, children }) => {
         </button>
 
         <div className={styles.content}>{children}</div>
+        <DarkMode />
       </div>
     </div>
   );
