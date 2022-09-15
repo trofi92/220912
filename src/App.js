@@ -1,23 +1,18 @@
 import "./App.css";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { Home } from "./components/Home";
-import { Post } from "./components/Post";
-// import {
-//   TransitionGroup,
-//   CSSTransition,
-// } from "react-transition-group";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./components/pages/Home";
 import { Layout } from "./components/Layout";
+import { Post } from "./components/pages/Post";
 export default function App() {
-  // const location = useLocation();
   return (
     <>
-      <Layout />
-
+      <Layout style={{ position: "absolute" }} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );
 }
-//https://devnm.tistory.com/m/10
+//https://devnm.tistory.com/m/10 transition group

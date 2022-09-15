@@ -1,7 +1,6 @@
 import { Sidebar } from "./Sidebar";
 import { Link } from "react-router-dom";
 import styles from "./Layout.module.css";
-// import { Modal } from "./Modal";
 
 export const Layout = (props) => {
   const isLoggedIn = true; //
@@ -25,19 +24,19 @@ export const Layout = (props) => {
               to="/post"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <li onClick={handlelogin}>Posts</li>
+              <li onClick={handlelogin}>Post</li>
+            </Link>
+            <Link
+              to="/list"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li onClick={handlelogin}>List</li>
             </Link>
             <Link
               to="<"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <li onClick={handlelogin}>Favorite</li>
-            </Link>
-            <Link
-              to="/"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <li onClick={handlelogin}>Contact</li>
             </Link>
             <Link
               to="/"
