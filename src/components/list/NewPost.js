@@ -1,9 +1,11 @@
 import { Post } from "../pages/Post";
+import { useNavigate } from "react-router-dom";
 
-export const NewList = () => {
+export const NewPost = () => {
+  const navigate = useNavigate();
   function addCafeHandler(cafeData) {
     fetch(
-      "https://udemy-react-course-ac235-default-rtdb.firebaseio.com/cafes.json",
+      "https://udemy-react-course-ac235-default-rtdb.firebaseio.com/cafe.json",
       {
         method: "POST",
         body: JSON.stringify(cafeData),
@@ -11,11 +13,12 @@ export const NewList = () => {
           "Content-Type": "application/json",
         },
       }
-    );
+    ).then(() => {
+      navigate("/");
+    });
   }
   return (
     <section>
-      <h1>Add New Meetup</h1>
       <Post onAddCafe={addCafeHandler} />
     </section>
   );

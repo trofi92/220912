@@ -23,7 +23,6 @@ export const Post = (props) => {
       description: enteredDescription,
     };
     props.onAddCafe(cafeData);
-    // console.log(cafeData);
   }
   return (
     <Card>
@@ -85,7 +84,7 @@ export const Post = (props) => {
                 ></textarea>
               </div>
               <div className={styles.actions}>
-                <button>Add</button>
+                <button>Add Cafe</button>
               </div>
             </form>
           </motion.div>
