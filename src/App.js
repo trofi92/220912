@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/pages/Home";
 import { Layout } from "./components/Layout";
 import { NewPost } from "./components/list/NewPost";
-
+import { AllCafeList } from "./components/pages/AllCafeList";
 export default function App() {
   return (
     <>
@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post" element={<NewPost />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/cafe-list" element={<AllCafeList />} />
       </Routes>
     </>
   );

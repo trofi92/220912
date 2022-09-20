@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import styles from "./ListItem.module.css";
-import { Card } from "../ Card";
 import FavoritesContext from "../favorites-context";
+import styles from "./ListItem.module.css";
+import { Card } from "../Card";
 
 export const ListItem = (props) => {
   const favoritesCtx = useContext(FavoritesContext);
@@ -29,7 +29,7 @@ export const ListItem = (props) => {
           <h3>{props.title}</h3>
           <address>{props.address}</address>
           <p>{props.description}</p>
-          useContext와 함께 작업할 것(복습)
+          {/* useContext와 함께 작업할 것(복습) */}
         </div>
         <div className={styles.actions}>
           <button onClick={toggleFavoriteStatusHandler}>

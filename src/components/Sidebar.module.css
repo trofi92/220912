@@ -27,6 +27,13 @@
   background-color: inherit;
   color: inherit;
 }
+span:hover,
+.button:hover {
+  background-color: inherit;
+  opacity: 0.3;
+  transition: 1s ease-in linear;
+}
+
 .openBtn {
   width: 100%;
   height: 100%;

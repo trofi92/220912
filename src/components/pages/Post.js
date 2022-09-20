@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./Post.module.css";
-import { Card } from "../Card";
 
 export const Post = (props) => {
   const titleInputRef = useRef();
@@ -25,7 +24,7 @@ export const Post = (props) => {
     props.onAddCafe(cafeData);
   }
   return (
-    <Card>
+    <div className={styles.background}>
       <AnimatePresence>
         <motion.div
           key="Post1"
@@ -35,9 +34,12 @@ export const Post = (props) => {
           exit={{ opacity: 0 }}
           transition={{ opacity: 0.2, y: 0.3 }}
         >
-          <p className={styles.title}>Post</p>
-          <p className={styles.subtitle}>Share your experience!</p>
+          <div className={styles.header}>
+            <p className={styles.title}>Post</p>
+            <p className={styles.subtitle}>Share your experience!</p>
+          </div>
         </motion.div>
+
         <div className={styles.wrapper}>
           <motion.div
             className="smooth"
@@ -90,6 +92,6 @@ export const Post = (props) => {
           </motion.div>
         </div>
       </AnimatePresence>
-    </Card>
+    </div>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 
 export const Layout = (props) => {
-  const isLoggedIn = true; //
+  const isLoggedIn = true;
   function handlelogin(e) {
     console.log("clicked!");
     return isLoggedIn ? "??" : alert("회원만 열람 가능합니다");
@@ -27,7 +27,7 @@ export const Layout = (props) => {
               <li onClick={handlelogin}>Post</li>
             </Link>
             <Link
-              to="/list"
+              to="/cafe-list"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <li onClick={handlelogin}>List</li>

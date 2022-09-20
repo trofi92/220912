@@ -12,6 +12,7 @@ body {
   display: inline-block;
   width: 100vw;
   top: 0;
+  margin-bottom: 32px;
   text-align: center;
   justify-content: center;
   left: 50%;
