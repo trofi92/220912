@@ -9,7 +9,7 @@ export const AllCafeList = () => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      "https://udemy-react-course-ac235-default-rtdb.firebaseio.com/cafe.json"
+      "https://react-cafe-app-project-default-rtdb.firebaseio.com/cafe.json"
     )
       .then((response) => {
         return response.json();

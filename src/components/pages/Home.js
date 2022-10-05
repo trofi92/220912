@@ -101,7 +101,7 @@ export const Home = () => {
                 />
               </a>
             </span>
-            <span className={styles.span9}>
+            {/* <span className={styles.span9}>
               <a href="/">
                 <img
                   src="https://images.unsplash.com/photo-1525480122447-64809d765ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhZmV8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60"
@@ -153,7 +153,7 @@ export const Home = () => {
                   alt=""
                 />
               </a>
-            </span>
+            </span> */}
           </div>
         </motion.div>
       </AnimatePresence>
