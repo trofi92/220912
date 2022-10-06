@@ -67,7 +67,6 @@ export const AllCafeList = () => {
           <h1>Cafe(s)</h1>
           <p>What's New?</p>
         </section>
-
         <List cafes={loadedCafes} />
       </motion.div>
     </AnimatePresence>
