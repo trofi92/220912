@@ -16,12 +16,18 @@ export const Login = () => {
   const [user, setUser] = useState({});
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  // useEffect(() => {
+  //   if(sessionStorage)
+  //   return () => {
+  //     cleanup
+  //   };
+  // }, [input]);
   useLayoutEffect(() => {
     onAuthStateChanged(authService, (currentUser) => {
       if (user) {
         currentUser !== null
           ? setIsLoggedIn(true)
-          : setIsLoggedIn(false);
+          : setIsLoggedIn(false, loggedOut());
         console.log(currentUser);
         return setPersistence(authService, browserSessionPersistence);
       } else {
@@ -97,8 +103,4 @@ export const Login = () => {
       </div>
     </form>
   );
-};
-export const loginState = (isLoggedIn) => {
-  console.log(isLoggedIn);
-  return isLoggedIn.value;
 };
