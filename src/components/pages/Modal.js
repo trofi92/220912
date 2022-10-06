@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import Join from "./Join";
 
 //framer-motion practice
 export const Modal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const navigate = useNavigate();
   return (
     <div className="root">
-      <button
+      {/* <button
         className="button"
         onClick={() => setIsModalOpen(!isModalOpen)}
-      >
-        Open Modal
-      </button>
+      ></button> */}
       <AnimatePresence>
         {isModalOpen && (
           <div key="modal" className="modal">
@@ -19,12 +20,19 @@ export const Modal = () => {
               // key="modal1"
               aria-label="Close modal"
               className="modal-overlay"
-              onClick={() => setIsModalOpen(false)}
+              onClick={() =>
+                setIsModalOpen(
+                  false,
+                  navigate("/", { replace: true })
+                )
+              }
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ opacity: 0.15 }}
-            />
+            >
+              다음에 할래요!
+            </motion.button>
             <motion.div
               key="modal2"
               className="modal-content"
@@ -33,7 +41,9 @@ export const Modal = () => {
               exit={{ opacity: 0 }}
               transition={{ opacity: 0.2, y: 0.3 }}
             >
-              <p>Login Form(WIP)</p>
+              <div>
+                <Join />
+              </div>
             </motion.div>
           </div>
         )}

@@ -1,0 +1,15 @@
+body,
+html {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.background {
+  background-image: url("https://intl-cbs.com/wp-content/uploads/2022/08/Coffee-GIF-v2.1-2.gif");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
